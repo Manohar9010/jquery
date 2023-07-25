@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            height: 550px;
+            width: 100%;
+        }
+        /* .photo1{
+            background: url(image1.jpg) center no-repeat;
+            background-size: cover;
+            height: 550px;
+            width: 100%;
+        }  
+        .photo2{
+            background: url(image2.jpg) center no-repeat;
+            background-size: cover;
+            height: 550px;
+            width: 100%;
+        }  
+        .photo3{
+            background: url(image3.jpg) center no-repeat;
+            background-size: cover;
+            height: 550px;
+            width: 100%;
+        }  
+        .photo4{
+            background: url(image4.jpg) center no-repeat;
+            background-size: cover;
+            height: 550px;
+            width: 100%;
+        }   */
+        /* h4{
+            color: white;
+            padding: 20px;
+        } */
+        .bx-wrapper {
+           position: relative;
+             margin-bottom: 60px;
+              padding: 0;
+              -ms-touch-action: pan-y;
+              touch-action: pan-y;
+            -moz-box-shadow: 0 0 5px #ccc;
+            -webkit-box-shadow: 0 0 5px #ccc;
+               box-shadow: 0 0 5px #ccc;
+               border: 0px solid #fff;
+              background: #fff;
+}
+        .bx-wrapper .bx-caption {
+          position: absolute;
+           bottom: 0;
+           left: 0;
+           background: transparent;
+            background: transparent;
+            width: 100%;
+            text-align: center;
+}
+        .bx-wrapper .bx-caption span {
+           color: #fff;
+           font-family: Arial;
+           display: block;
+           font-size: .95em;
+           padding: 10px;
+}
+       /* .bx-wrapper .bx-pager {
+        position: absolute;
+        top: 0;
+        right: 620px;
+          text-align: center;
+          font-size: .85em;
+         font-family: Arial;
+         font-weight: 700;
+        color:white;
+       padding-top: 20px;
+} */
+.bxslider h4{
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+    left: 10px;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+  <div class="bxslider">
+    <div class="photo1">
+        <img src="image1.jpg" alt="" title="Caption 1"> 
+        <h4>1/4</h4>
+    </div>
+
+    <div class="photo2">
+        <img src="image2.jpg" alt="" title="Caption 2">
+        <h4>2/4</h4>
+    </div>
+    <div class="photo3">
+        <img src="image3.jpg" alt="" title="Caption 3">
+        <h4>3/4</h4>
+    </div>
+    <div class="photo4">
+        <img src="image4.jpg" alt="" title="Caption 4">
+        <h4>4/4</h4>
+    </div>
+    <div class="slider-dot">
+        <div></div>
+    </div>
+  </div>    
+  <!-- <div class="bx-controls bx-has-controls-direction bx-has-pager"><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="" data-slide-index="2" class="bx-pager-link">3</a></div><div class="bx-pager-item"><a href="" data-slide-index="3" class="bx-pager-link active">4</a></div></div></div>
+  <div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div>
+  <div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="" data-slide-index="2" class="bx-pager-link">3</a></div><div class="bx-pager-item"><a href="" data-slide-index="3" class="bx-pager-link active">4</a>
+</div>
+</div>
+</div> -->
+</body>
+  <!-- jquery cdn -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!--  bx slider cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".bxslider").bxSlider({
+                speed:1000,
+                randomStart:true,
+                captions:true,
+                auto:true,
+                autoHover:true,
+                pager: true,
+                // pagerType: 'short'
+                pagerType: 'full'
+            })
+        })
+    </script>
+</body>
+</html>

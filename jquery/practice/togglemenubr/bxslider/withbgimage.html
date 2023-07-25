@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <style>
+        *{
+            margin: 0;
+        }
+         .bx-wrapper{
+            -moz-box-shadow:none;
+            -webkit-box-shadow:none;
+            box-shadow: none;
+            border: none;
+            background: #fff;
+         }
+         .bx-wrapper .bx-pager.bx-default-pager a{
+            background: white;
+        }
+        .bx-wrapper .bx-pager.bx-default-pager a.active{
+            background: red;
+        }
+        .bx-wrapper .bx-pager{
+            bottom: 25px;
+        }
+        .banners1{
+            background: url(imges/image1.avif)center no-repeat ;
+            background-size: cover;
+            height: 550px;
+            color: white;
+        }
+        .banners2{
+            background: url(imges/imge2.jpg)center no-repeat ;
+            background-size: cover;
+            height: 550px;
+            color: white;
+        }
+        .banners3{
+            background: url(imges/image3.jpg)center no-repeat ;
+            background-size: cover;
+            height: 550px;
+            color: white;
+        }
+        .banners4{
+            background: url(imges/images4.webp)center no-repeat ;
+            background-size: cover;
+            height: 550px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="bxslider">
+        <div class="banners1">
+            <h1>Image 1</h1>
+        </div>
+        <div class="banners2">
+            <h1>Image 2</h1>
+        </div>
+        <div class="banners3">
+            <h1>Image 3</h1>
+        </div>
+        <div class="banners4">
+            <h1>Image 4</h1>
+        </div>
+    </div>
+       <!-- jquery cdn -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+       <script>
+         $(document).ready(function(){
+            $(".bxslider").bxSlider()
+         })
+       </script>
+</body>
+</html>

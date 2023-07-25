@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header id="headertop">
+        <div class="container header-p">
+            <div class="header-flex">
+                <div class="logo">
+                    <h1><span class="fa-solid fa-home">Logo</span></h1>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">about</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Pages</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="theme">
+                    <div class="theme-icon">
+                        <span class="fa-solid fa-moon"></span>
+                    </div>
+                    <div class="togglebtn">
+                        <button class="tbtn">
+                            <span class="fa-solid fa-bars"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     </header>
+     <section class="bgimage">
+        <img src="tree-736885_1280.jpg" alt="">
+     </section>
+    <script src="togglemenubar.js"></script>
+    <script src="changebg_headr.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $icon=$(".fa-bars");
+        $(".tbtn").click(function(){
+        $(".navbar").toggleClass("nav_toggle");
+        if($(".navbar").hasClass("nav_toggle")==true){
+            $icon.removeClass("fa-bars")
+            $icon.addClass("fa-close")
+        }else{
+            $icon.removeClass("fa-close")
+            $icon.addClass("fa-bars")
+        }
+    })
+})
+
+    </script>
+
+<script>
+    $(document).ready(function(){
+    $(window).scroll(function(){
+        $current = $(this).scrollTop();
+        if($current>0){
+            $("header").addClass("header_fixed")
+        }else{
+            $("header").removeClass("header_fixed")
+        }
+    })
+})
+</script>
+
+
+</body>
+</html>

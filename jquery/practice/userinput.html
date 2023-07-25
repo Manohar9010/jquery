@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+         $(document).ready(function(){
+            $("#btn1").click(function(){
+                $user = $("#user").val()
+                if($user == "" || $user == null){
+                    $("#msg").text("Enter value")
+                    return false
+                }else{
+                    $(".msg").text($user)
+                    return false
+                }
+            })
+         })
+    </script>
+    <style>
+        #msg{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        Enter Any Value :
+        <input type="text" name="" id="user">
+        <button id="btn1">Click Here</button>
+    </form>
+    <p id="msg" class="msg"></p>
+</body>
+</html>
